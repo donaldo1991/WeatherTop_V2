@@ -1,0 +1,153 @@
+{
+  "stationCollection": [
+    {
+      "id": "ad964f50-20b2-11ed-aed7-71bec52e0640",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Glenmore",
+      "latitude": "-1",
+      "longitude": "5",
+      "readings": [
+        {
+          "id": "c5ea14f0-20c2-11ed-9e43-a929e988340b",
+          "date_time": "20/08/2022 21:00:43",
+          "code": 100,
+          "temp": 23.6,
+          "wind_speed": 19.6,
+          "wind_direction": 123,
+          "pressure": 34
+        },
+        {
+          "id": "dab2bef0-2149-11ed-80f3-e11227158771",
+          "date_time": "21/08/2022 13:07:40",
+          "code": 0,
+          "temp": 0,
+          "wind_speed": 0,
+          "wind_direction": 0,
+          "pressure": 1001
+        },
+        {
+          "id": "de2c5550-2149-11ed-80f3-e11227158771",
+          "date_time": "21/08/2022 13:07:46",
+          "code": 0,
+          "temp": 0,
+          "wind_speed": 0,
+          "wind_direction": 0,
+          "pressure": 45
+        },
+        {
+          "id": "4754d880-214b-11ed-8890-7189dfbad730",
+          "date_time": "21/08/2022 13:17:52",
+          "code": 800,
+          "temp": 0,
+          "wind_speed": 0,
+          "wind_direction": 0,
+          "pressure": 0
+        },
+        {
+          "id": "adc23680-2150-11ed-8647-f9211bd9ab4b",
+          "date_time": "21/08/2022 13:56:31",
+          "code": 0,
+          "temp": 6,
+          "wind_speed": 0,
+          "wind_direction": 0,
+          "pressure": 0
+        },
+        {
+          "id": "af9aee20-2150-11ed-8647-f9211bd9ab4b",
+          "date_time": "21/08/2022 13:56:34",
+          "code": 0,
+          "temp": 8,
+          "wind_speed": 0,
+          "wind_direction": 0,
+          "pressure": 0
+        },
+        {
+          "id": "96153d90-2153-11ed-80f1-cdde7228b29e",
+          "date_time": "21/08/2022 14:17:20",
+          "code": 300,
+          "temp": 34,
+          "wind_speed": 123,
+          "wind_direction": 56,
+          "pressure": 1009
+        }
+      ],
+      "currentTempInC": 8,
+      "currentTempInF": "46.00",
+      "maxTemp": 23.6,
+      "minTemp": 0,
+      "currentWindSpeed": 0,
+      "currentWindDirection": "North",
+      "currentWindChill": "18.09",
+      "maxWind": 19.6,
+      "minWind": 0,
+      "currentPressure": 0,
+      "maxPressure": 1001,
+      "minPressure": 0,
+      "tempTrend": "arrow up icon",
+      "windTrend": "arrows alternate horizontal icon",
+      "pressureTrend": "arrows alternate horizontal icon"
+    },
+    {
+      "id": "45519ea0-20c0-11ed-b92c-417020564500",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "WeatherTop",
+      "latitude": "-1.90",
+      "longitude": "24.87",
+      "readings": [
+        {
+          "id": "677783b0-2141-11ed-933b-3594139b705b",
+          "date_time": "21/08/2022 12:07:11",
+          "code": 300,
+          "temp": 11.8,
+          "wind_speed": 123,
+          "wind_direction": 34,
+          "pressure": 500
+        },
+        {
+          "id": "51364b90-214b-11ed-8890-7189dfbad730",
+          "date_time": "21/08/2022 13:18:08",
+          "code": 700,
+          "temp": 0,
+          "wind_speed": 0,
+          "wind_direction": 0,
+          "pressure": 0
+        },
+        {
+          "id": "34a5b2b0-2153-11ed-8791-c706b1bc9bb8",
+          "date_time": "21/08/2022 14:14:36",
+          "code": 0,
+          "temp": 0,
+          "wind_speed": 0,
+          "wind_direction": 0,
+          "pressure": 5
+        },
+        {
+          "id": "543f9a50-2153-11ed-8791-c706b1bc9bb8",
+          "date_time": "21/08/2022 14:15:29",
+          "code": 800,
+          "temp": 0,
+          "wind_speed": 0,
+          "wind_direction": 0,
+          "pressure": 0
+        }
+      ],
+      "currentTempInC": 0,
+      "currentTempInF": "32.00",
+      "maxTemp": 11.8,
+      "minTemp": 0,
+      "currentWindSpeed": 0,
+      "currentWindDirection": "North",
+      "currentWindChill": "13.12",
+      "maxWind": 123,
+      "minWind": 0,
+      "currentPressure": 0,
+      "maxPressure": 500,
+      "minPressure": 0,
+      "currentWeather": "Thunder",
+      "currentWeatherIcon": "bolt icon",
+      "tempTrend": "arrows alternate horizontal icon",
+      "windTrend": "arrows alternate horizontal icon",
+      "pressureTrend": "arrows alternate horizontal icon"
+    }
+  ]
+}

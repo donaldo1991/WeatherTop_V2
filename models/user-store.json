@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "firstName": "homer",
+      "lastName": "simpson",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "id": "3ad52697-6d98-4d80-8273-084de55a86c0"
+    },
+    {
+      "firstName": "marge",
+      "lastName": "simpson",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
+    },
+    {
+      "firstName": "Donal",
+      "lastName": "Murphy",
+      "email": "domo232@hotmail.com",
+      "password": "secret",
+      "id": "6c4a6dd0-1fa7-11ed-82b3-83c0b73d252a"
+    },
+    {
+      "firstName": "D",
+      "lastName": "M",
+      "email": "domo232@hotmail.com",
+      "password": "secret",
+      "id": "59d92780-2174-11ed-89e6-ff2ff7199f50"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+<div class="ui grid">
+  <div class="five column row">
+    <div class="column">
+      <div class="ui inverted cards">
+        <div class="red card">
+          <div class="content">
+            <div class="header"><span class="ui small text">{{station.name}}{{name}}</span><a class ="ui right floated">
+              <i class="purple map marked icon"></i></a></div>
+            <div class="description"><span class="ui small text">Lat: {{station.latitude}}{{latitude}}</span></div>
+            <div class="description"><span class="ui small text">Lng: {{station.longitude}}{{longitude}}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui inverted cards">
+        <div class="orange card">
+          <div class="content">
+            <div class="header"><span class="ui small text">Weather</span><a class ="ui right floated">
+              <i class="{{currentWeatherIcon}}"></i></a></div>
+            <div class="description"><span class="ui small text">{{currentWeather}}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui inverted cards">
+        <div class="yellow card">
+          <div class="content">
+            <div class="header"><span class="ui small text">Temp</span><a class ="ui right floated">
+              <i class="red temperature high icon"></i></a></div>
+            <div class="description"><span class="ui small text">{{currentTempInC}} C</span></div>
+            <div class="description"><span class="ui small text">{{currentTempInF}} F</span></div>
+            <div class="description"><span class="ui small text">Max: {{maxTemp}}</span></div>
+            <div class="description"><span class="ui small text">Min: {{minTemp}}</span><a class ="ui right floated">
+              <i class="{{tempTrend}}"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui inverted cards">
+        <div class="olive card">
+          <div class="content">
+            <div class="header"><span class="ui small text">Wind</span><a class ="ui right floated">
+              <i class="blue fitted wind icon"></i></a></div>
+            <div class="description"><span class="ui small text">{{currentWindSpeed}} bft</span></div>
+            <div class="description"><span class="ui small text">{{currentWindDirection}}</span></div>
+            <div class="description"><span class="ui small text">Feels like</span></div>
+            <div class="description"><span class="ui small text">{{currentWindChill}}</span></div>
+            <div class="description"><span class="ui small text">Max: {{maxWind}}</span></div>
+            <div class="description"><span class="ui small text">Min: {{minWind}}</span><a class ="ui right floated">
+              <i class="{{windTrend}}"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui inverted cards">
+        <div class="green card">
+          <div class="content">
+            <div class="header"><span class="ui small text">Pressure</span><a class ="ui right floated">
+              <i class="orange compress arrows alternate icon"></i></a></div>
+            <div class="description"><span class="ui small text">{{currentPressure}} hpa</span></div>
+            <div class="description"><span class="ui small text">Max: {{maxPressure}}</span></div>
+            <div class="description"><span class="ui small text">Min: {{minPressure}}</span><a class ="ui right floated">
+              <i class="{{pressureTrend}}"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

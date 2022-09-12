@@ -1,0 +1,23 @@
+<nav class="ui menu">
+  <header class="ui header item"> <a href="/"> WeatherTop_V2 </a></header>
+  <title class="ui title item"> Welcome to weatherTop version 2.0</title>
+  <div class="right menu">
+    <a id="dashboard" class="item" href="/dashboard"> Dashboard  </a>
+    <a id="about" class="item" href="/about"> About </a>
+    <div class="ui dropdown item">
+      <i class="user icon"></i>
+      <div class="menu">
+       <a class="item" href="/edituser">Edit User Details</a>
+        <a class="item" href="/logout">Logout</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  $("#{{id}}").addClass("active item");
+</script>
+
+<script>
+  $('.ui.dropdown').dropdown();
+</script>
