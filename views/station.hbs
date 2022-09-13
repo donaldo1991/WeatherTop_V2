@@ -6,6 +6,71 @@
     <p>{{station.name}} Weather Station</p>
   </h2>
   {{> stationpanel}}
+  <div class="ui segment" id="chart"></div>
+  <script>
+    const data = {
+      labels: [
+        {{#each station.readings}}
+          "{{date_time}}",
+        {{/each}}
+      ],
+      datasets: [
+        {
+          name: "Wind Speed", chartType: "bar",
+          values: [
+            {{#each station.readings}}
+              {{wind_speed}},
+            {{/each}}
+          ]
+        },
+        {
+          name: "Temperature", chartType: "line",
+          values: [
+            {{#each station.readings}}
+              {{temp}},
+            {{/each}}
+          ]
+        },
+      ]
+    }
+    const chart = new frappe.Chart("#chart", {
+      title: "Wind Speed and Temperature Trends",
+      data: data,
+      type: 'axis-mixed',
+      height: 350,
+      colors: ["red"]
+    })
+  </script>
+  <div class="ui segment" id="chart_pressure"></div>
+  <script>
+    const data_pressure = {
+      labels: [
+        {{#each station.readings}}
+          "{{date_time}}",
+        {{/each}}
+      ],
+      datasets: [
+        {
+          name: "Pressure", chartType: "bar",
+          values: [
+            {{#each station.readings}}
+              {{pressure}},
+            {{/each}}
+          ]
+        }
+      ]
+    }
+    const chart_pressure = new frappe.Chart("#chart_pressure", {
+      title: "Pressure Trend",
+      data: data_pressure,
+      type: 'line',
+      height: 350,
+      colors: ["green"],
+    })
+  </script>
   {{> listreadings}}
   {{> addreading}}
+  <form class="ui stacked segment form" action="/dashboard/{{station.id}}/autoaddreport" method="POST">
+    <button class="ui red submit button">Auto Add Weather Reading</button>
+  </form>
 </section>

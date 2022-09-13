@@ -12,23 +12,25 @@ const dashboard = {
     const loggedInUser = accounts.getCurrentUser(request);
     const stations = stationStore.getUserStations(loggedInUser.id)
     for(const station of stations){
-      station.currentWeather = stationAnalytics.getCurrentWeather(station);
-      station.currentTempInC = station.readings[station.readings.length - 1].temp;
-      station.currentTempInF = ((Math.round(((station.readings[station.readings.length - 1].temp)*1.8)+32)*100)/100).toFixed(2);
-      station.maxTemp = stationAnalytics.getMaxTemp(station);
-      station.minTemp = stationAnalytics.getMinTemp(station);
-      station.currentWindSpeed = stationAnalytics.getCurrentWindSpeed(station);
-      station.currentWindDirection = stationAnalytics.getCurrentWindDirection(station);
-      station.currentWindChill = stationAnalytics.getCurrentWindChill(station).toFixed(2);
-      station.maxWind = stationAnalytics.getMaxWind(station);
-      station.minWind = stationAnalytics.getMinWind(station);
-      station.currentPressure = station.readings[station.readings.length - 1].pressure;
-      station.maxPressure = stationAnalytics.getMaxPressure(station);
-      station.minPressure = stationAnalytics.getMinPressure(station);
-      station.currentWeatherIcon = stationAnalytics.getCurrentWeatherIcon(station);
-      station.tempTrend = stationAnalytics.getTempTrend(station);
-      station.windTrend = stationAnalytics.getWindTrend(station);
-      station.pressureTrend = stationAnalytics.getPressureTrend(station);
+      if(station.readings.length !== 0) {
+        station.currentWeather = stationAnalytics.getCurrentWeather(station);
+        station.currentTempInC = station.readings[station.readings.length - 1].temp;
+        station.currentTempInF = ((Math.round(((station.readings[station.readings.length - 1].temp) * 1.8) + 32) * 100) / 100).toFixed(2);
+        station.maxTemp = stationAnalytics.getMaxTemp(station);
+        station.minTemp = stationAnalytics.getMinTemp(station);
+        station.currentWindSpeed = stationAnalytics.getCurrentWindSpeed(station);
+        station.currentWindDirection = stationAnalytics.getCurrentWindDirection(station);
+        station.currentWindChill = stationAnalytics.getCurrentWindChill(station).toFixed(2);
+        station.maxWind = stationAnalytics.getMaxWind(station);
+        station.minWind = stationAnalytics.getMinWind(station);
+        station.currentPressure = station.readings[station.readings.length - 1].pressure;
+        station.maxPressure = stationAnalytics.getMaxPressure(station);
+        station.minPressure = stationAnalytics.getMinPressure(station);
+        station.currentWeatherIcon = stationAnalytics.getCurrentWeatherIcon(station);
+        station.tempTrend = stationAnalytics.getTempTrend(station);
+        station.windTrend = stationAnalytics.getWindTrend(station);
+        station.pressureTrend = stationAnalytics.getPressureTrend(station);
+      }
     }
     const viewData = {
       title: "Station Dashboard",

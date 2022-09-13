@@ -31,4 +31,6 @@ router.post("/reading/:id/updatereading/:readingid", reading.update);
 router.get("/edituser", accounts.editUser);
 router.post("/edituser/details", accounts.editUserDetails);
 
+router.post("/dashboard/:id/autoaddreport", station.autoAddReading);
+
 module.exports = router;

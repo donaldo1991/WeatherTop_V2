@@ -65,10 +65,10 @@ const accounts = {
   editUserDetails(request,response) {
     const currentUser = userstore.getUserByEmail(request.cookies.playlist);
     if(currentUser.email === request.cookies.playlist) {
-      currentUser.firstName = request.body.firstname;
-      currentUser.lastName = request.body.surname;
-      currentUser.email = request.body.email;
-      currentUser.password = request.body.password;
+      if(request.body.firstname){currentUser.firstName = request.body.firstname}
+      if(request.body.surname){currentUser.lastName = request.body.surname}
+      if(request.body.email){currentUser.email = request.body.email}
+      if(request.body.password){currentUser.password = request.body.password}
     }
     const viewData = {
       title: "Edit User Details"
